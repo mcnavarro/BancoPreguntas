@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "EscuelaId": 1,
+    "Codigo": "ME-0106",
+    "Nombre": "Enfermedades Infecciosas I"
+  },
+  {
+    "Id": 2,
+    "EscuelaId": 1,
+    "Codigo": "ME-0107",
+    "Nombre": "Enfermedades Infecciosas II"
+  },
+  {
+    "Id": 3,
+    "EscuelaId": 3,
+    "Codigo": "MC-8843",
+    "Nombre": "Aprendizaje Automático"
+  },
+  {
+    "Id": 4,
+    "EscuelaId": 4,
+    "Codigo": "MC-6101",
+    "Nombre": "Inteligencia Artificial"
+  }
+]

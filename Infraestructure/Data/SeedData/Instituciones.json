@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Universidad de Costa Rica",
+    "ImagenUrl": "images/institucion/ucr.png"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Instituto Tecnológico de Costa Rica",
+    "ImagenUrl": "images/institucion/tec.png"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "PreguntaId": 1,
+    "Descripcion": "Riñón"
+  },
+  {
+    "Id": 2,
+    "PreguntaId": 1,
+    "Descripcion": "Hígado"
+  },
+  {
+    "Id": 3,
+    "PreguntaId": 1,
+    "Descripcion": "Corazón"
+  },
+  {
+    "Id": 4,
+    "PreguntaId": 1,
+    "Descripcion": "Estómago"
+  },
+  {
+    "Id": 5,
+    "PreguntaId": 2,
+    "Descripcion": "La anemia"
+  },
+  {
+    "Id": 6,
+    "PreguntaId": 2,
+    "Descripcion": "El ciclo de Loss"
+  },
+  {
+    "Id": 7,
+    "PreguntaId": 2,
+    "Descripcion": "El síndrome de Loefler"
+  },
+  {
+    "Id": 8,
+    "PreguntaId": 2,
+    "Descripcion": "Ulceraciones de la mucosa"
+  },
+  {
+    "Id": 9,
+    "PreguntaId": 3,
+    "Descripcion": "Choque toxico."
+  },
+  {
+    "Id": 10,
+    "PreguntaId": 3,
+    "Descripcion": "Glomerulonefritis."
+  },
+  {
+    "Id": 11,
+    "PreguntaId": 3,
+    "Descripcion": "Fiebre reumática."
+  },
+  {
+    "Id": 12,
+    "PreguntaId": 3,
+    "Descripcion": "Faringitis estreptocócica."
+  }
+]

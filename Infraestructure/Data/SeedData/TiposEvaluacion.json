@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Examen Parcial"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Examen Final"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Quiz"
+  }
+]

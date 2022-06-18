@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "InstitucionId": 1,
+    "Nombre": "Escuela de Medicina",
+    "ImagenUrl": "images/escuela/medicina.png"
+  },
+  {
+    "Id": 2,
+    "InstitucionId": 1,
+    "Nombre": "Escuela de Microbiología",
+    "ImagenUrl": "images/escuela/micro.png"
+  },
+  {
+    "Id": 3,
+    "InstitucionId": 2,
+    "Nombre": "Escuela de Ingeniería en Computación",
+    "ImagenUrl": "images/escuela/computacion.png"
+  },
+  {
+    "Id": 4,
+    "InstitucionId": 2,
+    "Nombre": "Escuela de Ingeniería Industrial",
+    "ImagenUrl": "images/escuela/industrial.png"
+  }
+]

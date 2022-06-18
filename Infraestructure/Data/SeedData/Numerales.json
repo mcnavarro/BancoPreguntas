@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "I"
+  },
+  {
+    "Id": 2,
+    "Nombre": "II"
+  },
+  {
+    "Id": 3,
+    "Nombre": "III"
+  },
+  {
+    "Id": 4,
+    "Nombre": "IV"
+  },
+  {
+    "Id": 5,
+    "Nombre": "V"
+  },
+  {
+    "Id": 6,
+    "Nombre": "VI"
+  },
+  {
+    "Id": 7,
+    "Nombre": "VII"
+  },
+  {
+    "Id": 8,
+    "Nombre": "VIII"
+  },
+  {
+    "Id": 9,
+    "Nombre": "IX"
+  },
+  {
+    "Id": 10,
+    "Nombre": "X"
+  }
+]

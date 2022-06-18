@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "EvaluacionId": 1,
+    "Descripcion": "Un órgano que presenta mayor cantidad de receptores para la Shiga Toxina es:"
+  },
+  {
+    "Id": 2,
+    "EvaluacionId": 1,
+    "Descripcion": "En las uncinarias la principal complicación está dada por:"
+  },
+  {
+    "Id": 3,
+    "EvaluacionId": 1,
+    "Descripcion": "Un niño de 10 años presenta fiebre de 39°C, inflamación dolorosa de la muñeca y la rodilla izquierda. Los padres refieren que el niño tuvo faringoamigdalitis dos semanas antes de la presente enfermedad. Se le realizo cultivo faríngeo, pero resultó negativo, presenta una frecuencia cardiaca elevada. Los datos anteriores hacen sospechar que el paciente presenta:"
+  }
+]
