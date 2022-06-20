@@ -5,6 +5,7 @@ using Core.Specifications;
 using API.DTOs;
 using AutoMapper;
 using API.Errors;
+using API.Helpers;
 
 namespace API.Controllers
 {
@@ -48,14 +49,19 @@ namespace API.Controllers
         }
 
         [HttpGet("evaluaciones")]
-        public async Task<ActionResult<IReadOnlyList<EvaluacionDTO>>> GetEvaluaciones()
+        public async Task<ActionResult<Pagination<EvaluacionDTO>>> GetEvaluaciones(
+            [FromQuery]EvaluacionSpecParams evaluacionParams)
         {
-            var spec = new EvaluacionesConTodosLosIncludesSpecification();
+            var spec = new EvaluacionesConTodosLosIncludesSpecification(evaluacionParams);
+            var countSpec = new EvaluacionConFiltrosForCountSpecification(evaluacionParams);
 
-            var evaluaciones = await _evaluacionRepo
-                .ListAsync(spec);
+            var totalItems = await _evaluacionRepo.CountAsync(countSpec);
+            
+            var evaluaciones = await _evaluacionRepo.ListAsync(spec);
 
-            return Ok(_mapper.Map<IReadOnlyList<Evaluacion>, IReadOnlyList<EvaluacionDTO>>(evaluaciones));
+            var data = _mapper.Map<IReadOnlyList<Evaluacion>, IReadOnlyList<EvaluacionDTO>>(evaluaciones);
+
+            return Ok(new Pagination<EvaluacionDTO>(evaluacionParams.PageIndex, evaluacionParams.PageSize, totalItems, data));
         }
 
         [HttpGet("escuelas")]
