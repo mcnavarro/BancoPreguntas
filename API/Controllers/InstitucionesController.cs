@@ -4,12 +4,11 @@ using Core.Interfaces;
 using Core.Specifications;
 using API.DTOs;
 using AutoMapper;
+using API.Errors;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class InstitucionesController : ControllerBase
+    public class InstitucionesController : BaseApiController
     {
         private readonly IGenericRepository<Institucion> _institucionRepo;
         private readonly IGenericRepository<Escuela> _escuelaRepo;
@@ -37,9 +36,15 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(Microsoft.AspNetCore.Http.StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), Microsoft.AspNetCore.Http.StatusCodes.Status404NotFound)]
         public async Task<ActionResult<Institucion>> GetInstitucion(int id)
         {
-            return Ok(await _institucionRepo.GetByIdAsync(id));
+            var institucion = await _institucionRepo.GetByIdAsync(id);
+
+            if (institucion == null) return NotFound(new ApiResponse(404));
+
+            return Ok(institucion);
         }
 
         [HttpGet("evaluaciones")]
